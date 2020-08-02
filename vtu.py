@@ -1,6 +1,6 @@
 mark=[]
-print("VTU CSE 4TH SEM CGPA CALCULATOR")
-sub1=['MATHS',"DS","ADE","CO","SE","DMS","LAB1","LAB2","KAN"]
+print("VTU CSE 4TH SEM SGPA CALCULATOR")
+sub1=['18MAT31',"SUB 2(4 credit)","SUB 3","SUB 4","SUB 5","SUB 6","LAB1","LAB2","(KAN/CIP)"]
 for i in range (9):
         print("Enter",sub1[i],"External Marks")
         mark.append(int(input()))
@@ -16,15 +16,18 @@ def avg(listc):
     for item in listc:
         sum+=item
     return sum/9
-mark[8]=(mark[8]*60)/100
+print("You had kannada press y if you had else n")
+choice=input()
+if choice=='y':
+    mark[8]=(mark[8]*60)/100
 k=con(mark,60)
 avg=avg(k)
 
 cie=[]
-sub2=["MATHS","DAA","OOC","OS","DC","MC","LAB1","LAB2",'CIP']
+sub2=["18MAT41","SUB 2(4 credit)","SUB3 ","SUB4","SUB5","SUB6","LAB1","LAB2",'CIP/KANNADA']
 print("INTERNAL MARKS 4TH SEM")
 for i in range (9):
-        print("Enter",sub2[i])
+        print("Enter",sub2[i],"marks")
         cie.append(int(input()))
 m=con(cie,40)
 def add(list,avg):
@@ -46,8 +49,10 @@ def cgpa(marks):
            grade.append(8)
        elif item>=60:
            grade.append(7)
-       else:
+       elif item>=50:
            grade.append(6)
+       else:
+           grade.append(5)
     m1= grade[0]*3
     m2= grade[1]*4
     m3 = grade[2] * 3
@@ -60,5 +65,5 @@ def cgpa(marks):
     fo=(m1+m2+m3+m4+m5+m6+m7+m8+m9)/24
     return fo
 cgpa=cgpa(marks)
-print("CGPA IS",cgpa)
+print("SGPA IS",cgpa)
 print("Created by santhosh Nayak")
