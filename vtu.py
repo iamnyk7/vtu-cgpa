@@ -64,6 +64,6 @@ def cgpa(marks):
     m9=grade[8]*1
     fo=(m1+m2+m3+m4+m5+m6+m7+m8+m9)/24
     return fo
-cgpa=cgpa(marks)
-print("SGPA IS",cgpa)
-print("Created by santhosh Nayak")
+# cgpa=cgpa(marks)
+# print("SGPA IS",cgpa)
+# print("Created by santhosh Nayak")
