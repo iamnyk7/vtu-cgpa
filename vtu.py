@@ -66,4 +66,4 @@ def cgpa(marks):
     return fo
 # cgpa=cgpa(marks)
 # print("SGPA IS",cgpa)
-# print("Created by santhosh Nayak")
+ print("Created and edited by Basrur Santhosh Nayak")
